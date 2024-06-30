@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Outlet } from 'react-router-dom'
 const Root = () => {
   return (
   <>
@@ -39,7 +39,9 @@ const Root = () => {
           </ul>
         </nav>
       </div>
-      <div id="detail"></div>
+      <div id="detail">
+        <Outlet/>
+      </div>
   </>
   )
 }
